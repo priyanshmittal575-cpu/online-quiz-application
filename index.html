@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSE Fundamentals Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="quiz-container">
+    <header class="quiz-header">
+      <h1>B.Tech CSE Quick Quiz</h1>
+      <span id="progressText">Question 1 of 6</span>
+    </header>
+
+    <div class="progress-bar">
+      <div id="progressFill" class="progress-fill"></div>
+    </div>
+
+    <div id="quizBody">
+      <h2 id="questionText" class="question"></h2>
+      <div id="optionsList" class="options"></div>
+      <p id="feedbackMsg" class="feedback"></p>
+
+      <div class="controls">
+        <button id="prevBtn" class="btn secondary">Previous</button>
+        <button id="nextBtn" class="btn primary">Next</button>
+      </div>
+    </div>
+
+    <div id="resultScreen" class="result-screen hidden">
+      <h2>Quiz Completed!</h2>
+      <p class="score-display">Your Score: <strong id="finalScore"></strong></p>
+      <p id="scoreRemark" class="remark"></p>
+      <button id="restartBtn" class="btn primary">Restart Quiz</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
